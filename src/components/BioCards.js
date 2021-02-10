@@ -41,7 +41,7 @@ const BioCards = () => {
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
@@ -57,8 +57,8 @@ const BioCards = () => {
         <h2>Tagok</h2>
         <Slider className='slider'{...settings}>
     <CardsContainer>
-            <Card style={{ background:`url(${peti})`,backgroundSize:'cover',backgroundPositionY:'230px'}}>
-                <CardLeft>
+            <Card >
+                <CardLeft style={{ background:`url(${peti})`,backgroundSize:'cover',backgroundRepeat:"no-repeat"}}>
                     <h4>Peti</h4>
                    
                 </CardLeft>
@@ -82,8 +82,8 @@ const BioCards = () => {
             </Card>
             </CardsContainer>
             <CardsContainer>
-            <Card style={{ background:`url(${balazs})`,backgroundSize:'cover',backgroundPositionY:'230px'}}>
-                <CardLeft>
+            <Card >
+                <CardLeft style={{ background:`url(${balazs})`,backgroundSize:'cover',backgroundRepeat:"no-repeat"}}>
                     <h4>Balázs</h4>
                
                 </CardLeft>
@@ -107,8 +107,8 @@ const BioCards = () => {
             </Card>
             </CardsContainer>
             <CardsContainer>
-            <Card style={{ background:`url(${feco})`,backgroundSize:'cover',backgroundPositionY:'230px'}}>
-                <CardLeft>
+            <Card >
+                <CardLeft style={{ background:`url(${feco})`,backgroundSize:'cover',backgroundRepeat:"no-repeat"}}>
                     <h4>Feri</h4>
                   
                 </CardLeft>
@@ -132,8 +132,8 @@ const BioCards = () => {
             </Card>
             </CardsContainer>
             <CardsContainer>
-            <Card style={{ background:`url(${bogdan})`,backgroundSize:'cover',backgroundPositionY:'200px'}}>
-                <CardLeft>
+            <Card>
+                <CardLeft style={{ background:`url(${bogdan})`,backgroundSize:'cover',backgroundRepeat:"no-repeat"}}>
                     <h4>Bogdán</h4>
                    
                 </CardLeft>

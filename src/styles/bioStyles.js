@@ -123,8 +123,8 @@ export const Card = styled.div`
     }
 
     @media(max-width:1200px){
-        height:480px;
-        width:340px;
+        height:400px;
+        width:320px;
 
         .slider{
             
@@ -132,9 +132,17 @@ export const Card = styled.div`
 
     }
 
-    @media(max-width:600px){
-       width:90%;
-       
+    @media(max-width:768px){
+       flex-direction:row;
+       width:400px;
+       height:250px; 
+       margin:0 auto 0 auto ;
+    }
+
+    @media(max-width:450px){
+
+       width:300px;
+       height:300px;
      
     }
     
@@ -143,6 +151,7 @@ export const Card = styled.div`
 export const CardLeft = styled.div`
     width:100%;
     height:50%;
+    text-align:end;
    
 
     
@@ -158,9 +167,9 @@ export const CardLeft = styled.div`
     @media(max-width:1024px){
     }
 
-        @media(max-width:600px){
-       width:100%;
-       height:50%;
+        @media(max-width:768px){
+       width:50%;
+       height:100%;
       
 
        
@@ -220,11 +229,12 @@ export const CardRight = styled.div`
             font-size:0.6rem;    
         }
     }
-        @media(max-width:600px){
-       
+        @media(max-width:768px){
+       width:50%;
+       height:100%;
    
        p{
-        font-size:0.5rem; 
+        font-size:0.45rem; 
        }
       
        
