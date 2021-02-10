@@ -85,9 +85,18 @@ h2{
     font-size:2.5rem;
 }
 .slider{
-    width:84%;
+    width:100%;
     margin: 0 auto 0 auto;
+
+    
 }
+
+
+@media(max-width:1500px){
+       .slider{
+           width:87%;
+       }
+    }
 
     
 `;
@@ -114,23 +123,20 @@ export const Card = styled.div`
     transition:0.5s;
     height:490px;
     width:340px;
+    
        
  
 
 
 
 
-    &:hover{
-        
-    }
+ 
+
 
     @media(max-width:1200px){
         height:400px;
         width:320px;
         margin: 0 auto 0 auto;
-
-       
-
     }
 
     @media(max-width:900px){
@@ -142,7 +148,7 @@ export const Card = styled.div`
 
     @media(max-width:450px){
 
-       width:300px;
+       width:290px;
        height:300px;
      
     }
@@ -152,7 +158,7 @@ export const Card = styled.div`
 export const CardLeft = styled.div`
     width:100%;
     height:50%;
-   
+    border-radius:0 0 15px 15px;
 
     
     h4{
@@ -172,6 +178,7 @@ export const CardLeft = styled.div`
         @media(max-width:900px){
        width:50%;
        height:100%;
+       border-radius:15px 0 0  15px;
       
 
        
@@ -189,6 +196,7 @@ export const CardRight = styled.div`
     justify-content:space-around;
     align-items:center;
     background:#ffffff;
+    border-radius:15px 15px 0 0;
 
     
     p{
@@ -235,6 +243,7 @@ export const CardRight = styled.div`
         @media(max-width:900px){
        width:50%;
        height:100%;
+       border-radius:0 15px 15px 0;
    
        p{
         font-size:0.45rem; 
