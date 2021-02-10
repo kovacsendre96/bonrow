@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.js": "/bonrow/static/js/main.f0c15d5c.chunk.js",
+    "main.js.map": "/bonrow/static/js/main.f0c15d5c.chunk.js.map",
+    "runtime-main.js": "/bonrow/static/js/runtime-main.412ca448.js",
+    "runtime-main.js.map": "/bonrow/static/js/runtime-main.412ca448.js.map",
+    "static/css/2.7cc3241e.chunk.css": "/bonrow/static/css/2.7cc3241e.chunk.css",
+    "static/js/2.1467a912.chunk.js": "/bonrow/static/js/2.1467a912.chunk.js",
+    "static/js/2.1467a912.chunk.js.map": "/bonrow/static/js/2.1467a912.chunk.js.map",
+    "index.html": "/bonrow/index.html",
+    "static/css/2.7cc3241e.chunk.css.map": "/bonrow/static/css/2.7cc3241e.chunk.css.map",
+    "static/js/2.1467a912.chunk.js.LICENSE.txt": "/bonrow/static/js/2.1467a912.chunk.js.LICENSE.txt",
+    "static/media/Decibel_2.29d951ad.ttf": "/bonrow/static/media/Decibel_2.29d951ad.ttf",
+    "static/media/SedgwickAve-Regular.e5221c4e.ttf": "/bonrow/static/media/SedgwickAve-Regular.e5221c4e.ttf",
+    "static/media/balazs.e97e36a0.jpg": "/bonrow/static/media/balazs.e97e36a0.jpg",
+    "static/media/bogdan.bb72198f.jpg": "/bonrow/static/media/bogdan.bb72198f.jpg",
+    "static/media/bonrow-crew.7cf7074e.jpg": "/bonrow/static/media/bonrow-crew.7cf7074e.jpg",
+    "static/media/bonrow_logo.13e46733.png": "/bonrow/static/media/bonrow_logo.13e46733.png",
+    "static/media/feco.a0111cc1.png": "/bonrow/static/media/feco.a0111cc1.png",
+    "static/media/peti.84e1b99a.jpg": "/bonrow/static/media/peti.84e1b99a.jpg",
+    "static/media/slick-theme.css": "/bonrow/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.412ca448.js",
+    "static/css/2.7cc3241e.chunk.css",
+    "static/js/2.1467a912.chunk.js",
+    "static/js/main.f0c15d5c.chunk.js"
+  ]
+}
