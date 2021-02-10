@@ -9,6 +9,7 @@ export const NavContainer = styled.div`
     padding-right:25px;
     position:fixed;
     z-index:1;
+    color:#ffffff;
     @media(max-width: 768px){
         justify-content:space-between;
     } 
@@ -73,6 +74,7 @@ export const LinksWrapper = styled.div`
         font-size:1.5rem;
         font-weight:bold;
         padding:10px;
+        
 
        &:hover{
         color: black;

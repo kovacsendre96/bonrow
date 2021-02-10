@@ -15,8 +15,9 @@ const BioHeader = () => {
                     és Koncz Péter (gitár), valamint jelenlegi tagjaik még Nyíri Ferenc (basszusgitár) és Vincze Bogdán (dob).
                 </p>
             </Description>
-            <ImgWrapper><img src={bonrowCrew} /></ImgWrapper>
+            <ImgWrapper>{/* <img src={bonrowCrew} /> */}</ImgWrapper>
         </BioHeaderContainer>
+        
 
     );
 };

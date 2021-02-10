@@ -1,16 +1,15 @@
 import styled from 'styled-components';
-import peti from '../images/peti.jpg';
-import balazs from '../images/balazs.jpg';
-import bogdan from '../images/bogdan.jpg';
-import feco from '../images/feco.png';
+import bonrowCrew from '../images/bonrow-crew.jpg';
+
 
 // ============================HEADER============================
 export const BioHeaderContainer = styled.div`
     display:flex;
+
     padding-top:80px;
     height: 100vh;
     
-    @media(max-width:1024px){
+    @media(max-width:1440px){
         flex-direction:column-reverse;
     }
     `;
@@ -19,17 +18,16 @@ export const ImgWrapper = styled.div`
 
 width:50%;
 height:100%;
+background:url(${bonrowCrew});
+background-size:cover;
+background-position-x:-120px; 
+background-repeat:no-repeat;
 
-@media(max-width:1024px){
+@media(max-width:1440px){
     width:100%;
+    background-position-x:-0; 
     }
 
-img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-   
-}
 
 
 `;
@@ -41,8 +39,15 @@ display:flex;
 justify-content:center;
 align-items:center;
 
-@media(max-width:1024px){
+@media(max-width:1440px){
     width:100%;
+    }
+
+    @media(max-width:1024px){
+    
+    p{
+        font-size:1rem !important;
+    }
 
     }
 p{
@@ -57,7 +62,22 @@ p{
 
 // ============================CARDS============================
 
+export const MainContainer= styled.div`
+padding-top:80px;
+padding-bottom:80px;
+background:black;
+h2{
+    color:#ffffff;
+    text-align:center;
+    font-size:2.5rem;
+}
+.slider{
+    width:84%;
+    margin: 0 auto 0 auto;
+}
 
+    
+`;
 
 export const CardsContainer = styled.div`
     padding-top:80px;
@@ -65,8 +85,6 @@ export const CardsContainer = styled.div`
     justify-content:center;
     align-items:center;
     background:black;
-  
-    
    
 `;
 
@@ -77,52 +95,32 @@ export const Card = styled.div`
     justify-content:center;
     align-items:center;
     flex-direction:column-reverse;
-    border: 1px solid white;
-    margin: 20px 15px;
+    margin:0 15px 0 15px ;
     transition:0.5s;
-    height:550px;
-    width:350px;
-
-
-    &:first-child{
-    background:url(${peti});
-    background-size:cover;
-    background-position-y:230px;
-
-    }
-    &:nth-child(2){
-    background:url(${balazs});
-    background-size:cover;
-    background-position-y:200px;
-    }   
-    &:nth-child(3){
-    background:url(${feco});
-    background-size:cover;
-    background-position-y:230px;
-    } 
-
-    &:nth-child(4){
-    background:url(${bogdan});
-    background-size:cover;
-    background-position-y:200px;
-    } 
+    height:500px;
+    width:330px;   
+ 
 
 
 
 
     &:hover{
-        transform:scale(1.05)
+        
     }
 
-    @media(max-width:1024px){
-        width:85%;
-        height:380px;
+    @media(max-width:1200px){
+        height:480px;
+        width:340px;
+
+        .slider{
+            
+        }
 
     }
 
     @media(max-width:600px){
-       flex-direction:column;
        width:90%;
+       
      
     }
     
@@ -144,32 +142,18 @@ export const CardLeft = styled.div`
 
   
     @media(max-width:1024px){
-        img{
-        width:55%;     
-        }
+    }
 
         @media(max-width:600px){
-       flex-direction:row;
        width:100%;
        height:50%;
-       h4{
-         display:none;  
-       }
-     
-       img{
-        width:100%;
-        height:100%; 
-        object-fit:cover;
-        padding:0;
-            
-        }
-
+      
 
        
     }
       
 
-    }
+    
 `;
 
 export const CardRight = styled.div`
@@ -184,7 +168,7 @@ export const CardRight = styled.div`
     
     p{
         
-        font-size:0.8rem;
+        font-size:0.61rem;
         text-align:justify;
         color:black;
     }
@@ -219,15 +203,14 @@ export const CardRight = styled.div`
 
     @media(max-width:1024px){
         p{
-            font-size:1rem;    
+            font-size:0.6rem;    
         }
     }
         @media(max-width:600px){
        
-       width:100%;
-       height:50%;
+   
        p{
-        font-size:0.9rem; 
+        font-size:0.5rem; 
        }
       
        

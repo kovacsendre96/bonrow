@@ -3,57 +3,61 @@ import React from 'react';
 import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram,} from '@fortawesome/free-brands-svg-icons';
 import { faQuoteRight,faQuoteLeft} from '@fortawesome/free-solid-svg-icons';
-import { CardsContainer, Card, CardLeft, CardRight, Cont, Container } from '../styles/bioStyles';
+import { CardsContainer, Card, CardLeft, CardRight, MainContainer } from '../styles/bioStyles';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import peti from '../images/peti.jpg';
+import balazs from '../images/balazs.jpg';
+import bogdan from '../images/bogdan.jpg';
+import feco from '../images/feco.png';
 
 const BioCards = () => {
 
 
-   /*  var settings = {
+    var settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         initialSlide: 0,
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1200,
             settings: {
               slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToScroll: 1,
               infinite: true,
               dots: true
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 1024,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToScroll: 1,
               initialSlide: 2
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 600,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
             }
           }
         ]
-      }; */
+      };
 
     return (
 
-        <CardsContainer>
-
-
-{/* <Slider {...settings}> */}
-            <Card>
+        
+        <MainContainer>
+        <h2>Tagok</h2>
+        <Slider className='slider'{...settings}>
+    <CardsContainer>
+            <Card style={{ background:`url(${peti})`,backgroundSize:'cover',backgroundPositionY:'230px'}}>
                 <CardLeft>
                     <h4>Peti</h4>
                    
@@ -76,8 +80,9 @@ const BioCards = () => {
                     
                 </CardRight>
             </Card>
-
-            <Card>
+            </CardsContainer>
+            <CardsContainer>
+            <Card style={{ background:`url(${balazs})`,backgroundSize:'cover',backgroundPositionY:'230px'}}>
                 <CardLeft>
                     <h4>Balázs</h4>
                
@@ -86,7 +91,7 @@ const BioCards = () => {
                 <CardRight>
                 <div className='quotes-wrapper-up'> <FontAwesomeIcon className='quotes' icon={faQuoteRight} /></div>
                     <div className='text-container'>
-                        <p>Az emberek gyakran úgy gondolják, hogy antiszoc vagyok és depressziós, ezért elkezdtem dalokat írni, hogy igazat adjak nekik az előbbiekkel kapcsolatban.
+                        <p>Az emberek gyakran úgy gondolják, hogy antiszoc vagyok és depressziós, ezért elkezdtem dalokat írni, hogy igazat adjak nekik.
                         Elsőként 10 évesen vettem hangszert a kezembe, majd azon a napon megírtam az Oasis – Wonderwall című számát magyar szöveggel, egy akkordra hangszerelve.
                         Ennek az lett a vége, hogy szüleim inkább beírattak egy zeneiskolába. Mára messzebb jutottam, mint bárki hitte volna, hiszen négy akkordos számokat is
                         simán meg tudok írni.
@@ -100,8 +105,9 @@ const BioCards = () => {
                     <div className='quotes-wrapper-down'><FontAwesomeIcon className='quotes' icon={faQuoteLeft} /></div>
                 </CardRight>
             </Card>
-
-            <Card>
+            </CardsContainer>
+            <CardsContainer>
+            <Card style={{ background:`url(${feco})`,backgroundSize:'cover',backgroundPositionY:'230px'}}>
                 <CardLeft>
                     <h4>Feri</h4>
                   
@@ -124,8 +130,9 @@ const BioCards = () => {
                     <div className='quotes-wrapper-down'><FontAwesomeIcon className='quotes' icon={faQuoteLeft} /></div>
                 </CardRight>
             </Card>
-
-            <Card>
+            </CardsContainer>
+            <CardsContainer>
+            <Card style={{ background:`url(${bogdan})`,backgroundSize:'cover',backgroundPositionY:'200px'}}>
                 <CardLeft>
                     <h4>Bogdán</h4>
                    
@@ -148,9 +155,9 @@ const BioCards = () => {
                 </CardRight>
             </Card>
 
-          {/*   </Slider> */}
-
         </CardsContainer>
+            </Slider>
+            </MainContainer>
 
 
 
