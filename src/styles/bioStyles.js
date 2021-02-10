@@ -9,51 +9,64 @@ export const BioHeaderContainer = styled.div`
     padding-top:80px;
     height: 100vh;
     
-    @media(max-width:1440px){
+    @media(max-width:1024px){
         flex-direction:column-reverse;
     }
     `;
 
 export const ImgWrapper = styled.div`
 
-width:50%;
+width:60%;
 height:100%;
 background:url(${bonrowCrew});
-background-size:cover;
-background-position-x:-120px; 
+background-size:cover; 
 background-repeat:no-repeat;
+background-position:center;
 
-@media(max-width:1440px){
+@media(max-width:1024px){
     width:100%;
-    background-position-x:-0; 
+    height:65%;
+    background-position:top;
     }
+  
+
+
+    
 
 
 
 `;
 
 export const Description = styled.div`
-width:50%;
+width:40%;
 height:100%;
 display:flex;
 justify-content:center;
 align-items:center;
 
-@media(max-width:1440px){
-    width:100%;
-    }
+
 
     @media(max-width:1024px){
+        width:100%;
+    height:35%;
     
     p{
-        font-size:1rem !important;
+        font-size:0.9rem !important;
+    }
+    }
+
+    @media(max-width:768px){
+   
+    
+    p{
+        font-size:0.7rem !important;
     }
 
     }
 p{
     color:#000000;
     width:80%;
-    font-size:1.5rem;
+    font-size:1.3rem;
     text-align:justify;
     
 }
@@ -85,6 +98,7 @@ export const CardsContainer = styled.div`
     justify-content:center;
     align-items:center;
     background:black;
+
    
 `;
 
