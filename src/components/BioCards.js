@@ -1,0 +1,163 @@
+
+import React from 'react';
+import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram,} from '@fortawesome/free-brands-svg-icons';
+import { faQuoteRight,faQuoteLeft} from '@fortawesome/free-solid-svg-icons';
+import { CardsContainer, Card, CardLeft, CardRight, Cont, Container } from '../styles/bioStyles';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
+const BioCards = () => {
+
+
+   /*  var settings = {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      }; */
+
+    return (
+
+        <CardsContainer>
+
+
+{/* <Slider {...settings}> */}
+            <Card>
+                <CardLeft>
+                    <h4>Peti</h4>
+                   
+                </CardLeft>
+
+                <CardRight>
+                    <div className='quotes-wrapper-up'> <FontAwesomeIcon className='quotes' icon={faQuoteRight} /></div>
+               
+                    <div className='text-container'>
+                        <p>'96-ban láttam meg a napvilágot egy szép májusi reggelen, amikor az angyalok dalolták a Sultans of swinget. A 80-as és 90-es évek rock zenéi voltak azok
+                        a számok amik meghatározták az ízlésemet.Komolyabban, zenekari szinten 2017-ben kezdtem el gitározni. Instrumentális tudásomra annyit mondanék,
+                        hogy 3,6 (Nem jó, de nem is tragikus)
+                        </p>
+                        <div>
+                            <FontAwesomeIcon className='icon' size="2x" icon={faFacebook} />
+                            <FontAwesomeIcon className='icon' size="2x" icon={faInstagram} />
+                        </div>
+                    </div>
+                    <div className='quotes-wrapper-down'><FontAwesomeIcon className='quotes' icon={faQuoteLeft} /></div>
+                    
+                </CardRight>
+            </Card>
+
+            <Card>
+                <CardLeft>
+                    <h4>Balázs</h4>
+               
+                </CardLeft>
+
+                <CardRight>
+                <div className='quotes-wrapper-up'> <FontAwesomeIcon className='quotes' icon={faQuoteRight} /></div>
+                    <div className='text-container'>
+                        <p>Az emberek gyakran úgy gondolják, hogy antiszoc vagyok és depressziós, ezért elkezdtem dalokat írni, hogy igazat adjak nekik az előbbiekkel kapcsolatban.
+                        Elsőként 10 évesen vettem hangszert a kezembe, majd azon a napon megírtam az Oasis – Wonderwall című számát magyar szöveggel, egy akkordra hangszerelve.
+                        Ennek az lett a vége, hogy szüleim inkább beírattak egy zeneiskolába. Mára messzebb jutottam, mint bárki hitte volna, hiszen négy akkordos számokat is
+                        simán meg tudok írni.
+                           </p>
+                        <div>
+                            <FontAwesomeIcon className='icon' size="2x" icon={faFacebook} />
+                            <FontAwesomeIcon className='icon' size="2x" icon={faInstagram} />
+                        </div>
+                    </div>
+
+                    <div className='quotes-wrapper-down'><FontAwesomeIcon className='quotes' icon={faQuoteLeft} /></div>
+                </CardRight>
+            </Card>
+
+            <Card>
+                <CardLeft>
+                    <h4>Feri</h4>
+                  
+                </CardLeft>
+
+                <CardRight>
+                <div className='quotes-wrapper-up'> <FontAwesomeIcon className='quotes' icon={faQuoteRight} /></div>
+                    <div className='text-container'>
+
+                        <p>
+                            Annó haverokkal alapítottunk egy együttest de nem voltak vele komolyabb szándékaink. Ezután játszottam egy orosházi zenekarban 3 évig,
+                            ami egy progresszív folk rock zenekar volt.
+                            Instrumentális vonalon is mozogtam egy ideig, valamint a pop rock stílusban is kipróbáltam magam. Ezt szeretném itt is tovább vinni.
+                    </p>
+                        <div>
+                            <FontAwesomeIcon className='icon' size="2x" icon={faFacebook} />
+                            <FontAwesomeIcon className='icon' size="2x" icon={faInstagram} />
+                        </div>
+                    </div>
+                    <div className='quotes-wrapper-down'><FontAwesomeIcon className='quotes' icon={faQuoteLeft} /></div>
+                </CardRight>
+            </Card>
+
+            <Card>
+                <CardLeft>
+                    <h4>Bogdán</h4>
+                   
+                </CardLeft>
+
+                <CardRight>
+                <div className='quotes-wrapper-up'> <FontAwesomeIcon className='quotes' icon={faQuoteRight} /></div>
+                    <div className='text-container'>
+                        <p>
+                            Több rockbandában voltam alapító és dobos. Illetve több metál bandában basszusgitároztam és volt pár sindwing project is,
+                            ahol basszeroztam vagy énekeltem. Pop, rock és punk ötvözését szeretem leginkább a zenében. Kedvenceim a 90-es évek alterrock szerzeményi.
+                    </p>
+                        <div>
+                            <FontAwesomeIcon className='icon' size="2x" icon={faFacebook} />
+                            <FontAwesomeIcon className='icon' size="2x" icon={faInstagram} />
+                        </div>
+
+                    </div>
+                    <div className='quotes-wrapper-down'><FontAwesomeIcon className='quotes' icon={faQuoteLeft} /></div>
+                </CardRight>
+            </Card>
+
+          {/*   </Slider> */}
+
+        </CardsContainer>
+
+
+
+
+
+
+    );
+};
+
+export default BioCards;
