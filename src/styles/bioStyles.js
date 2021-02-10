@@ -55,7 +55,7 @@ align-items:center;
     }
     }
 
-    @media(max-width:768px){
+    @media(max-width:900px){
    
     
     p{
@@ -106,13 +106,15 @@ export const CardsContainer = styled.div`
 
 export const Card = styled.div`
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
     flex-direction:column-reverse;
-    margin:0 15px 0 15px ;
+    margin-right:10px;
+    margin-left:10px;
     transition:0.5s;
-    height:500px;
-    width:330px;   
+    height:490px;
+    width:340px;
+       
  
 
 
@@ -125,14 +127,13 @@ export const Card = styled.div`
     @media(max-width:1200px){
         height:400px;
         width:320px;
+        margin: 0 auto 0 auto;
 
-        .slider{
-            
-        }
+       
 
     }
 
-    @media(max-width:768px){
+    @media(max-width:900px){
        flex-direction:row;
        width:400px;
        height:250px; 
@@ -151,15 +152,16 @@ export const Card = styled.div`
 export const CardLeft = styled.div`
     width:100%;
     height:50%;
-    text-align:end;
    
 
     
     h4{
         
+        text-align:center;
         font-size:2rem;
         color:white;
         padding:8px;
+        
         
     }
 
@@ -167,7 +169,7 @@ export const CardLeft = styled.div`
     @media(max-width:1024px){
     }
 
-        @media(max-width:768px){
+        @media(max-width:900px){
        width:50%;
        height:100%;
       
@@ -192,7 +194,7 @@ export const CardRight = styled.div`
     p{
         
         font-size:0.61rem;
-        text-align:justify;
+        
         color:black;
     }
     .text-container{
@@ -224,12 +226,13 @@ export const CardRight = styled.div`
       
     }
 
-    @media(max-width:1024px){
+    @media(max-width:1200px){
         p{
-            font-size:0.6rem;    
+            font-size:0.5rem;    
         }
     }
-        @media(max-width:768px){
+  
+        @media(max-width:900px){
        width:50%;
        height:100%;
    

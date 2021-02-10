@@ -23,19 +23,28 @@ const BioCards = () => {
         slidesToScroll: 1,
         initialSlide: 0,
         responsive: [
+            {
+                breakpoint: 1500,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: true
+                }
+            },
           {
             breakpoint: 1200,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2,
               slidesToScroll: 1,
               infinite: true,
               dots: true
             }
           },
           {
-            breakpoint: 1024,
+            breakpoint: 900,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1,
               initialSlide: 2
             }
