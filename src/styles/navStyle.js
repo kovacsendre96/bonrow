@@ -13,7 +13,8 @@ export const NavContainer = styled.div`
     @media(max-width: 768px){
         justify-content:space-between;
     } 
-    
+
+  
     .menu-bar{
         display:none;
         align-items:center;
@@ -52,6 +53,11 @@ export const LinksWrapper = styled.div`
   display:flex;
   align-items:center;
   justify-content:space-around;
+  .link{
+      color:#ffffff;
+      text-decoration:none;
+    }
+    
   
   
   @media(max-width: 768px){

@@ -79,6 +79,7 @@ export const MainContainer= styled.div`
 padding-top:80px;
 padding-bottom:80px;
 background:black;
+
 h2{
     color:#ffffff;
     text-align:center;
@@ -106,7 +107,7 @@ export const CardsContainer = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-    background:black;
+    
 
    
 `;
@@ -217,7 +218,16 @@ export const CardRight = styled.div`
           
             .icon{
                 margin:8px;
+                color:black;
+                &:hover{
+
+                }
             }
+            a{
+                text-decoration:none;
+            }
+  
+            
         }
 
     }
