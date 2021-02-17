@@ -70,9 +70,8 @@ export const LinksWrapper = styled.div`
       flex-direction:column;
       height: calc(100vh - 80px);
       width:100%;
-      background:grey;
+      background-color:black;
       justify-content:center;
-      
     }
     
     

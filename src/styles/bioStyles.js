@@ -5,7 +5,7 @@ import bonrowCrew from '../images/bonrow-crew.jpg';
 // ============================HEADER============================
 export const BioHeaderContainer = styled.div`
     display:flex;
-
+    background:white;
     padding-top:80px;
     height: 100vh;
     
@@ -19,13 +19,13 @@ export const ImgWrapper = styled.div`
 width:60%;
 height:100%;
 background:url(${bonrowCrew});
-background-size:cover; 
+background-size:contain; 
 background-repeat:no-repeat;
 background-position:center;
 
+
 @media(max-width:1024px){
     width:100%;
-    height:65%;
     background-position:top;
     }
   
@@ -48,7 +48,7 @@ align-items:center;
 
     @media(max-width:1024px){
         width:100%;
-    height:35%;
+        
     
     p{
         font-size:0.9rem !important;
@@ -75,10 +75,11 @@ p{
 
 // ============================CARDS============================
 
-export const MainContainer= styled.div`
+export const MainContainer = styled.div`
 padding-top:80px;
 padding-bottom:80px;
 background:black;
+
 
 h2{
     color:#ffffff;
@@ -86,11 +87,22 @@ h2{
     font-size:2.5rem;
 }
 .slider{
-    width:100%;
+    width:95%;
     margin: 0 auto 0 auto;
 
+    .slick-dots li.slick-active button:before {
+                color:  #ffffff!important;
+            }
+            .slick-dots li button::before {
+
+                color:#696981 ;
+                opacity:0.6;
+
+            }
+        }
+
     
-}
+
 
 
 @media(max-width:1500px){
@@ -105,8 +117,6 @@ h2{
 export const CardsContainer = styled.div`
     padding-top:80px;
     display:flex;
-    justify-content:center;
-    align-items:center;
     
 
    
@@ -119,24 +129,19 @@ export const Card = styled.div`
     justify-content:space-between;
     align-items:center;
     flex-direction:column-reverse;
-    margin-right:10px;
-    margin-left:10px;
     transition:0.5s;
-    height:490px;
+    height:630px;
     width:340px;
+    margin:10px auto 10px auto ; 
+    
     
        
  
 
 
-
-
- 
-
-
     @media(max-width:1200px){
-        height:400px;
-        width:320px;
+        height:600px;
+        width:300px;
         margin: 0 auto 0 auto;
     }
 
@@ -158,13 +163,13 @@ export const Card = styled.div`
 
 export const CardLeft = styled.div`
     width:100%;
-    height:50%;
+    height:62%;
     border-radius:0 0 15px 15px;
 
     
     h4{
         
-        text-align:center;
+        text-align:start;
         font-size:2rem;
         color:white;
         padding:8px;
@@ -191,7 +196,7 @@ export const CardLeft = styled.div`
 
 export const CardRight = styled.div`
     width:100%;
-    height:50%;
+    height:38%;
     display:flex;
     flex-direction:column;
     justify-content:space-around;

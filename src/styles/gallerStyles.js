@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const MainConatiner = styled.div`
 	background:black;
+	
+	
 
 
 `;
@@ -9,6 +11,7 @@ export const Tags = styled.div`
 text-align: center;
 	padding-top:90px;
 	background:#ffffff;
+	
 	
 	
 
@@ -20,6 +23,7 @@ text-align: center;
 	margin: 0px 10px;
 	background-color: transparent;
 	cursor: pointer;
+	
 }
 
 .active {
@@ -30,11 +34,13 @@ text-align: center;
 
 
 export const Container = styled.div`
-	width: 80%;
+	width: 90%;
 	margin:80px auto 0px auto;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 10px;
+
+	text-align:center;
 
     @media (max-width:1024px){
         grid-template-columns: repeat(3, 1fr);
@@ -58,6 +64,7 @@ export const Container = styled.div`
     object-fit: cover;
 	filter:grayscale(75%);
 	transition:0.5s;
+
 	
 	
 	&:hover{

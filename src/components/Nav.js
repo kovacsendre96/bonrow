@@ -30,8 +30,9 @@ const ActiveHandler = () =>{
             <LinksWrapper className={isActive?'active':''}>
                <Link onClick={ActiveHandler} className="link" to ="/">BIO</Link> 
                <Link onClick={ActiveHandler} className="link" to ="/gallery">GALLÉRIA</Link> 
-               <Link onClick={ActiveHandler} className="link" to ="/zene">ZENE</Link> 
-               <Link onClick={ActiveHandler} className="link" to ="/kapcsolat">KAPCSOLAT</Link> 
+               <Link onClick={ActiveHandler} className="link" to ="/music">ZENE</Link> 
+               <Link onClick={ActiveHandler} className="link" to ="/contact">KAPCSOLAT</Link> 
+       
             </LinksWrapper>
            <div onClick={ActiveHandler} className="menu-bar"> < FontAwesomeIcon icon={faBars} size="3x" /></div>
         </NavContainer>

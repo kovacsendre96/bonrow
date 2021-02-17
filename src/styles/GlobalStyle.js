@@ -19,13 +19,19 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lexend Mega', sans-serif;
+
+}
+body{
+    background:black;
 }
    
  h1,h2,h3,h4,h5,h6,a{
         font-family:Decibel;
 
  }
-
+a{
+    text-decoration:none;
+}
 
 
 `;

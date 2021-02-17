@@ -16,8 +16,6 @@ const BioCards = () => {
 
 
     var settings = {
-        dots: true,
-        infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -46,14 +44,18 @@ const BioCards = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    initialSlide: 2
+                    initialSlide: 2,
+                    infinite: true,
+                    dots: true
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
                 }
             }
         ]
@@ -161,8 +163,8 @@ const BioCards = () => {
                                     ahol basszeroztam vagy énekeltem. Pop, rock és punk ötvözését szeretem leginkább a zenében. Kedvenceim a 90-es évek alterrock szerzeményi.
                     </p>
                                 <div>
-                                   
-                                    
+
+
                                     <a target="blanc" class="socialA" href="https://www.facebook.com/vincze.bobo"> <FontAwesomeIcon className='icon' size="2x" icon={faFacebook} /></a>
                                     <a target="blanc" class="socialA" href="https://instagram.com/bogdan.vincze?igshid=1kuk5582umdwj"><FontAwesomeIcon className='icon' size="2x" icon={faInstagram} /></a>
                                 </div>
