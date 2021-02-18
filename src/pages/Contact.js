@@ -1,36 +1,139 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container } from '../styles/contactStyles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify, faDeezer, faAmazon, faInstagram, faYoutube, faApple, faTiktok, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import emailjs from 'emailjs-com';
+import Button from 'react-bootstrap/Button';
+import Alert from 'react-bootstrap/Alert';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+export default function Contact() {
+
+
+    const [showDanger, setShowDanger] = useState(true);
+    const [showSucces, setShowSucces] = useState(true);
+    const [showDangerMessage, setShowDangerMessage] = useState(true);
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [message, setMessage] = useState();
+
+    const [nameClass, setNameClass] = useState(false);
+    const [emailClass, setEmailClass] = useState(false);
+    const [messageClass, setMessageClass] = useState(false);
+
+
+    const NameHandler = (e) => {
+        setName(e.target.value)
+
+    };
+
+    const EmailHandler = (e) => {
+        setEmail(e.target.value)
+
+    };
+
+    const MessageHandler = (e) => {
+        setMessage(e.target.value)
+        
+    };
+
+
+    function sendEmail(e) {
+        e.preventDefault();
+
+        if ((name === undefined) || (email === undefined) || (message === undefined)) {
+            setMessageClass(true);
+            setEmailClass(true);
+            setNameClass(true);
+            setShowDanger(false);
+
+        }
+        else if (message.length < 6) {
+            setMessageClass(true);
+            setShowDangerMessage(false);
+
+        }
+
+        else {
+            e.target.reset();
+            setShowSucces(false);
+            setShowDanger(true);
+            setShowDangerMessage(true);
+            setMessage();
+            setEmail();
+            setName();
+            setMessageClass(false);
+            setEmailClass(false);
+            setNameClass(false);
+        }
+
+        /* emailjs.sendForm('template_xbbgjf9', 'template_xbbgjf9', e.target, 'user_rLVLx6iz1DQBWutaDo8UC')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        */
+    }
 
 
 
 
-const Contact = () => {
+
+
 
     return (
 
+
         <Container>
+            <Alert style={{ transition:"0.5s"}} variant="success" className={showSucces ? 'unvisible' : ''}onClose={() => setShowSucces(true)} dismissible>
+                <p>  Sikeres üzenetküldés</p>
+            </Alert>
+
+            <Alert style={{padding:"0",margin:"0",transition:"0.5s"}}  variant="danger" className={showDanger ? 'unvisible' : ''} onClose={() => setShowDanger(true)} dismissible>
+                <Alert.Heading>Hiányos űrlap</Alert.Heading>
+                <p>
+                    A csillaggal jelölt rész kitöltése kötelező .
+              </p>
+            </Alert>
+
+            <Alert style={{padding:"0",margin:"0",transition:"0.5s"}}  variant="danger" className={showDangerMessage ? 'unvisible' : ''} onClose={() => setShowDangerMessage(true)} dismissible>
+                <Alert.Heading>Hiányos űrlap</Alert.Heading>
+                <p>
+                   Az üzenetnek legalább 6 karakterből kell állnia.
+              </p>
+            </Alert>
+
             <h2>Kapcsolat</h2>
-            <div className="form-wrapper">
-                <div className="input-wrapper">
-                    <input class="input--text" type="text" id="fullName" name="fullName" size="64" maxlength="64"
-                        placeholder="Teljes név" />
-                    <input class="input--text" type="text" id="email" name="email" size="64" maxlength="64"
-                        placeholder="Email" />
-                    <input class="input--text" type="text" id="phone" name="phone" size="32" maxlength="32"
-                        placeholder="Telefonszám" />
+            <form onSubmit={sendEmail} >
+                <div className="form-wrapper">
+                    <div className="input-wrapper">
 
+                        <input className={`input--text ${nameClass ? 'name-error' : ''}`} type="name" id="name" name="name" size="64" maxlength="64"
+                            placeholder="Név*" onChange={NameHandler} />
+
+                        <input class={`input--text ${emailClass ? 'email-error' : ''}`} type="email" id="email" name="email" size="64" maxlength="64"
+                            placeholder="Email*" onChange={EmailHandler} />
+
+                        <input class="input--text" type="phone" id="phone" name="phone" size="32" maxlength="32"
+                            placeholder="Telefonszám" />
+
+
+                    </div>
+
+                    <div className="message-wrapper">
+                        <input class={`input--textarea ${messageClass ? 'message-error' : ''}`} id="message" name="message" rows="10" cols="80"
+                            placeholder="Üzenet(Legalább 6 karakter hosszú)*" onChange={MessageHandler} />
+                        <input class="submit__btn" type="submit" name="contactSubmit" value="Elküldés" />
+                    </div>
 
                 </div>
+            </form>
 
-                <div className="message-wrapper">
-                    <textarea class="input--textarea" id="message" name="message" rows="10" cols="80"
-                        placeholder="Üzenet"></textarea>
-                    <input class="submit__btn" type="submit" name="contactSubmit" value="Elküldés" />
-                </div>
 
-            </div>
+
             <div className="icon-wrapper">
                 <a href="https://www.facebook.com/bonrowzenekar"> <FontAwesomeIcon className='icon' icon={faFacebook} /></a>
                 <a href="https://www.instagram.com/bonrowzenekar"> <FontAwesomeIcon className='icon' icon={faInstagram} /></a>
@@ -40,11 +143,13 @@ const Contact = () => {
                 <a href="https://music.apple.com/us/artist/bonrow/1504128798"> <FontAwesomeIcon className='icon' icon={faApple} /></a>
                 <a href="https://www.deezer.com/en/artist/89121102"> <FontAwesomeIcon className='icon' icon={faDeezer} /></a>
                 <a href="https://www.tiktok.com/music/Valaki-más-6807537169331144706"> <FontAwesomeIcon className='icon' icon={faTiktok} /></a>
-
             </div>
+
+   
         </Container>
 
     );
 };
 
-export default Contact;
+
+

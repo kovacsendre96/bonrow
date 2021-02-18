@@ -6,7 +6,15 @@ color:white;
 width:70%;
 margin:0 auto 0 auto;
 text-align:center;
+height:calc(100vh - 50px);
 
+
+.unvisible{
+
+   
+    display:none;
+    
+}
 
 h2{
     font-size:3rem;
@@ -28,6 +36,10 @@ h2{
         height:35px;
         margin :15px 0px; 
     }
+
+    .name-error,.email-error{
+        border:2px solid red;
+    }
 }
 
 .message-wrapper{
@@ -35,11 +47,15 @@ h2{
 
     .input--textarea{
         width:100%;
+        height:150px;
         resize:none;
     }
     .submit__btn{
         height:40px;
         margin-top:15px;
+    }
+    .message-error{
+        border:2px solid red;
     }
 }
 

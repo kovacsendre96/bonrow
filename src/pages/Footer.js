@@ -11,11 +11,14 @@ return(
 export default Footer;
 
 const FooterStyle = styled.div`
+
 width:100%;
 height:40px;
 color:white;
 font-size:0.6rem;
 text-align:center;
+
+
 a{
     color:green;
     font-weight:bold;

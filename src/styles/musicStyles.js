@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
-padding-top:100px;
+padding-top:10px;
 
 `;
 
@@ -14,6 +14,7 @@ export const AlbumWrapper = styled.div`
     width:90%;
     margin: 0 auto 0 auto;
     background:black;
+    height:calc(100vh - 50px);
   
    
     

@@ -130,8 +130,8 @@ export const Card = styled.div`
     align-items:center;
     flex-direction:column-reverse;
     transition:0.5s;
-    height:630px;
-    width:340px;
+    height:640px;
+    width:330px;
     margin:10px auto 10px auto ; 
     
     
@@ -163,7 +163,7 @@ export const Card = styled.div`
 
 export const CardLeft = styled.div`
     width:100%;
-    height:62%;
+    height:55%;
     border-radius:0 0 15px 15px;
 
     
@@ -196,7 +196,7 @@ export const CardLeft = styled.div`
 
 export const CardRight = styled.div`
     width:100%;
-    height:38%;
+    height:45%;
     display:flex;
     flex-direction:column;
     justify-content:space-around;

@@ -10,7 +10,7 @@ import {Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <>
+    <div>
       <GlobalStyle />
       <Nav />
       <Switch>
@@ -32,9 +32,10 @@ function App() {
       <Contact />
       </Route>
       </Switch>
-      <Footer />
-    </>
+      {/*  <Footer />  */}
+    </div>
   );
 }
 
 export default App;
+
