@@ -57,7 +57,26 @@ export const LinksWrapper = styled.div`
       color:#ffffff;
       text-decoration:none;
     }
-    
+
+    .icon-wrapper{
+    display:none;
+    width:80%;
+    justify-content:space-around;
+
+  
+
+    .icon{
+        font-size:1.3rem;
+    }
+    a{
+        color:white;
+        transition:0.5s;
+        padding:8px;
+        border-radius:15px;
+     
+    }
+
+}
   
   
   @media(max-width: 768px){
@@ -72,6 +91,9 @@ export const LinksWrapper = styled.div`
       width:100%;
       background-color:black;
       justify-content:center;
+      .icon-wrapper{
+          display:flex;
+      }
     }
     
     
@@ -90,6 +112,7 @@ export const LinksWrapper = styled.div`
        
        @media(max-width: 768px){
         padding: 15px 0 15px 0;
+        
    }
    }
 

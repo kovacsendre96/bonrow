@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import bonrowCrew from '../images/bonrow-crew.jpg';
 
 
+
 // ============================HEADER============================
 export const BioHeaderContainer = styled.div`
     display:flex;

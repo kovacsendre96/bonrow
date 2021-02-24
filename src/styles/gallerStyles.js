@@ -1,15 +1,17 @@
 import styled from 'styled-components';
+import {motion} from 'framer-motion';
 
-export const MainConatiner = styled.div`
+
+export const MainConatiner = styled(motion.div)`
 	background:black;
-	
-	
+	padding-top:90px;
 
 
 `;
 export const Tags = styled.div`
 text-align: center;
-	padding-top:90px;
+height:35px;
+	
 	background:#ffffff;
 	
 	

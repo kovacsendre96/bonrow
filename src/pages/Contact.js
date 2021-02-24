@@ -6,6 +6,7 @@ import emailjs from 'emailjs-com';
 import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {pageAnimation} from '../styles/animation';
 
 
 
@@ -87,7 +88,7 @@ export default function Contact() {
     return (
 
 
-        <Container>
+        <Container variants={pageAnimation} initial="hidden" animate="show" exit="exit" >
             <Alert style={{ transition:"0.5s"}} variant="success" className={showSucces ? 'unvisible' : ''}onClose={() => setShowSucces(true)} dismissible>
                 <p>  Sikeres üzenetküldés</p>
             </Alert>

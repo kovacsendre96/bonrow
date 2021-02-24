@@ -6,32 +6,41 @@ import Gallery from './pages/Gallery';
 import Music from './pages/Music';
 import Contact from './pages/Contact';
 import Footer from './pages/Footer';
-import {Switch, Route} from 'react-router-dom';
+import {Switch, Route, useLocation} from 'react-router-dom';
+import {AnimatePresence} from 'framer-motion';
 
 function App() {
+
+  const location = useLocation();
   return (
     <div>
       <GlobalStyle />
       <Nav />
-      <Switch>
+      <AnimatePresence exitBeforeEnter>
+   
+      <Switch location={location}key={location.pathname}>
+
       <Route path="/" exact>
       <Bio />
       </Route>
 
-      <Route path="/gallery">
+      <Route path="/gallery" exact>
       <Gallery />
       </Route>
 
 
-      <Route path="/music">
+      <Route path="/music" exact>
       <Music />
       </Route>
 
 
-      <Route path="/contact">
+      <Route path="/contact"exact>
       <Contact />
       </Route>
+
       </Switch>
+
+      </AnimatePresence>
       {/*  <Footer />  */}
     </div>
   );

@@ -1,9 +1,9 @@
 
 import styled from 'styled-components';
+import {motion} from 'framer-motion';
 
-
-export const Container = styled.div`
-padding-top:10px;
+export const Container = styled(motion.div)`
+padding-top:80px;
 
 `;
 
@@ -14,7 +14,7 @@ export const AlbumWrapper = styled.div`
     width:90%;
     margin: 0 auto 0 auto;
     background:black;
-    height:calc(100vh - 50px);
+  
   
    
     
@@ -33,10 +33,11 @@ export const AlbumWrapper = styled.div`
         width:35%;
         height:100%;
         text-align:center;
+        
         p{
             width:85%;
         }
-  
+      
     }
 
     @media (max-width:1440px){
@@ -46,6 +47,8 @@ export const AlbumWrapper = styled.div`
             width:90%;
             height:40%;
         }
+    }
+    
         @media (max-width:425px){
             p{
                 font-size:0.8rem;
@@ -55,7 +58,6 @@ export const AlbumWrapper = styled.div`
             }
         
         }
-    }
     
    
 .music-wrapper{
@@ -69,11 +71,11 @@ export const AlbumWrapper = styled.div`
    
     @media (max-width:1440px){
         grid-template-columns: repeat(3, 1fr);
-        width:100%;
+        width:80%;
     }
     @media (max-width:1024px){
         grid-template-columns: repeat(2, 1fr);
-        width:100%;
+        width:80%;
       
     }
  

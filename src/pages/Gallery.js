@@ -17,6 +17,8 @@ import gintonic_12 from '../images/Gin Tonic album/gintonic_12.jpg';
 import gintonic_13 from '../images/Gin Tonic album/gintonic_13.jpg';
 import gintonic_14 from '../images/Gin Tonic album/gintonic_14.png';
 
+import {pageAnimation} from '../styles/animation';
+
 const album=[
     gintonic_1, gintonic_2, gintonic_3,gintonic_4, gintonic_5, gintonic_6, gintonic_7, gintonic_8,gintonic_9, gintonic_10,gintonic_11,gintonic_12,gintonic_13,gintonic_14
 ];
@@ -60,7 +62,7 @@ const Gallery = () => {
 
 
     return (
-        <MainConatiner >
+        <MainConatiner variants={pageAnimation}initial="hidden" animate="show" exit='exit' >
             <Tags>
             <TagButton name="Összes" tagActive={tag === 'Összes' ? true : false} handleSetTag={setTag} /> /
             <TagButton name="Gin Tonic Szeged 2020" tagActive={tag === 'Gin Tonic Szeged 2020' ? true : false} handleSetTag={setTag} />/
