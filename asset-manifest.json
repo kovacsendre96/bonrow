@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/bonrow/static/js/main.37207986.chunk.js",
-    "main.js.map": "/bonrow/static/js/main.37207986.chunk.js.map",
+    "main.js": "/bonrow/static/js/main.ae68d2a9.chunk.js",
+    "main.js.map": "/bonrow/static/js/main.ae68d2a9.chunk.js.map",
     "runtime-main.js": "/bonrow/static/js/runtime-main.412ca448.js",
     "runtime-main.js.map": "/bonrow/static/js/runtime-main.412ca448.js.map",
     "static/css/2.07e5eb8b.chunk.css": "/bonrow/static/css/2.07e5eb8b.chunk.css",
@@ -11,6 +11,8 @@
     "static/css/2.07e5eb8b.chunk.css.map": "/bonrow/static/css/2.07e5eb8b.chunk.css.map",
     "static/js/2.1eb9ba35.chunk.js.LICENSE.txt": "/bonrow/static/js/2.1eb9ba35.chunk.js.LICENSE.txt",
     "static/media/Decibel_2.29d951ad.ttf": "/bonrow/static/media/Decibel_2.29d951ad.ttf",
+    "static/media/Light-In-Brush.4f01071e.ttf": "/bonrow/static/media/Light-In-Brush.4f01071e.ttf",
+    "static/media/Our-Daydream.886eeba8.ttf": "/bonrow/static/media/Our-Daydream.886eeba8.ttf",
     "static/media/SedgwickAve-Regular.e5221c4e.ttf": "/bonrow/static/media/SedgwickAve-Regular.e5221c4e.ttf",
     "static/media/balazs.2e4c97de.jpg": "/bonrow/static/media/balazs.2e4c97de.jpg",
     "static/media/bogdan.1d6a95ff.jpg": "/bonrow/static/media/bogdan.1d6a95ff.jpg",
@@ -38,6 +40,6 @@
     "static/js/runtime-main.412ca448.js",
     "static/css/2.07e5eb8b.chunk.css",
     "static/js/2.1eb9ba35.chunk.js",
-    "static/js/main.37207986.chunk.js"
+    "static/js/main.ae68d2a9.chunk.js"
   ]
 }
