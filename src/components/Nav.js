@@ -24,11 +24,13 @@ const ActiveHandler = () =>{
     return(
         <NavContainer>
             <ImgWrapper>
+            <Link onClick={ActiveHandler} className="link" to ="/bonrow">
                 <img src={bonrowLogo} />
+                </Link>
             </ImgWrapper>
 {/*             <iframe src="https://open.spotify.com/embed/artist/0JBbrViO0M4a66OAkh0uf2" width="280" height="70" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> 
  */}            <LinksWrapper className={isActive?'active':''}>
-               <Link onClick={ActiveHandler} className="link" to ="/">BIO</Link> 
+               <Link onClick={ActiveHandler} className="link" to ="/bonrow">BIO</Link> 
                <Link onClick={ActiveHandler} className="link" to ="/gallery">GALLÉRIA</Link> 
                <Link onClick={ActiveHandler} className="link" to ="/music">ZENE</Link> 
                <Link onClick={ActiveHandler} className="link" to ="/contact">KAPCSOLAT</Link> 

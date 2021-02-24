@@ -19,10 +19,10 @@ function App() {
       <AnimatePresence exitBeforeEnter>
    
       <Switch location={location}key={location.pathname}>
-
-      <Route path="/" exact>
+      <Route path="/bonrow" exact>
       <Bio />
       </Route>
+
 
       <Route path="/gallery" exact>
       <Gallery />
