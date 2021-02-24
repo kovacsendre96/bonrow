@@ -24,8 +24,15 @@ h2{
 .form-wrapper{
     display:flex;
     justify-content:space-between;
-}
 
+    label{
+        padding:0;
+        margin:0;
+        text-align:start;
+        width:100%;
+        font-weight:bold;
+    }
+}
 
 .input-wrapper{
     width:35%;
@@ -34,7 +41,14 @@ h2{
     .input--text{
         width:100%;
         height:35px;
-        margin :15px 0px; 
+        margin :15px 0px;
+        background:black;
+        color:white;
+        &:focus{
+            outline:none;
+           
+        }
+       
     }
 
     .name-error,.email-error{
@@ -49,10 +63,23 @@ h2{
         width:100%;
         height:150px;
         resize:none;
+        text-align:start;
+        background:black;
+        color:white;
+        &:focus{
+            outline:none;
+        }
+        
     }
     .submit__btn{
         height:40px;
         margin-top:15px;
+        background:black;
+        color:white;
+        transition:0.5s;
+        &:hover{
+           background:#2d2d2d;
+        }
     }
     .message-error{
         border:2px solid red;
@@ -87,6 +114,7 @@ h2{
     .form-wrapper{
         flex-direction:column;
         align-items:center;
+
 
 
         .input-wrapper,.message-wrapper{

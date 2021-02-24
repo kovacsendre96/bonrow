@@ -126,7 +126,7 @@ export const CardsContainer = styled.div`
 
 export const Card = styled.div`
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
     flex-direction:column-reverse;
     transition:0.5s;
@@ -148,7 +148,7 @@ export const Card = styled.div`
     @media(max-width:900px){
        flex-direction:row;
        width:400px;
-       height:250px; 
+       height:300px; 
        margin:0 auto 0 auto ;
     }
 
@@ -199,7 +199,7 @@ export const CardRight = styled.div`
     height:45%;
     display:flex;
     flex-direction:column;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
     background:#ffffff;
     border-radius:15px 15px 0 0;
@@ -222,7 +222,7 @@ export const CardRight = styled.div`
             font-size:0.8rem;
           
             .icon{
-                margin:8px;
+                margin:0px 8px;
                 color:black;
                 &:hover{
 

@@ -26,7 +26,7 @@ const ActiveHandler = () =>{
             <ImgWrapper>
                 <img src={bonrowLogo} />
             </ImgWrapper>
-
+           {/*  <iframe src="https://open.spotify.com/embed/artist/0JBbrViO0M4a66OAkh0uf2" width="280" height="70" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
             <LinksWrapper className={isActive?'active':''}>
                <Link onClick={ActiveHandler} className="link" to ="/">BIO</Link> 
                <Link onClick={ActiveHandler} className="link" to ="/gallery">GALLÉRIA</Link> 

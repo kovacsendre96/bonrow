@@ -110,22 +110,26 @@ export default function Contact() {
             <form onSubmit={sendEmail} >
                 <div className="form-wrapper">
                     <div className="input-wrapper">
-
+                        
+                        <label for="name">Név*</label>
                         <input className={`input--text ${nameClass ? 'name-error' : ''}`} type="name" id="name" name="name" size="64" maxlength="64"
-                            placeholder="Név*" onChange={NameHandler} />
+                             onChange={NameHandler} />
 
+                        <label for="email">E-mail cím*</label>
                         <input class={`input--text ${emailClass ? 'email-error' : ''}`} type="email" id="email" name="email" size="64" maxlength="64"
-                            placeholder="Email*" onChange={EmailHandler} />
+                             onChange={EmailHandler} />
 
+                        <label for="phone">Telefonszám</label>
                         <input class="input--text" type="phone" id="phone" name="phone" size="32" maxlength="32"
-                            placeholder="Telefonszám" />
+                            />
 
 
                     </div>
 
                     <div className="message-wrapper">
+                        <label>Üzenet*</label>
                         <input class={`input--textarea ${messageClass ? 'message-error' : ''}`} id="message" name="message" rows="10" cols="80"
-                            placeholder="Üzenet(Legalább 6 karakter hosszú)*" onChange={MessageHandler} />
+                            placeholder="Legalább 6 karakter hosszú" onChange={MessageHandler} />
                         <input class="submit__btn" type="submit" name="contactSubmit" value="Elküldés" />
                     </div>
 
