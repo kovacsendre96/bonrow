@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/bonrow/static/js/main.ae68d2a9.chunk.js",
-    "main.js.map": "/bonrow/static/js/main.ae68d2a9.chunk.js.map",
+    "main.js": "/bonrow/static/js/main.ffa3d6fe.chunk.js",
+    "main.js.map": "/bonrow/static/js/main.ffa3d6fe.chunk.js.map",
     "runtime-main.js": "/bonrow/static/js/runtime-main.412ca448.js",
     "runtime-main.js.map": "/bonrow/static/js/runtime-main.412ca448.js.map",
     "static/css/2.07e5eb8b.chunk.css": "/bonrow/static/css/2.07e5eb8b.chunk.css",
-    "static/js/2.1eb9ba35.chunk.js": "/bonrow/static/js/2.1eb9ba35.chunk.js",
-    "static/js/2.1eb9ba35.chunk.js.map": "/bonrow/static/js/2.1eb9ba35.chunk.js.map",
+    "static/js/2.3fe48474.chunk.js": "/bonrow/static/js/2.3fe48474.chunk.js",
+    "static/js/2.3fe48474.chunk.js.map": "/bonrow/static/js/2.3fe48474.chunk.js.map",
     "index.html": "/bonrow/index.html",
     "static/css/2.07e5eb8b.chunk.css.map": "/bonrow/static/css/2.07e5eb8b.chunk.css.map",
-    "static/js/2.1eb9ba35.chunk.js.LICENSE.txt": "/bonrow/static/js/2.1eb9ba35.chunk.js.LICENSE.txt",
+    "static/js/2.3fe48474.chunk.js.LICENSE.txt": "/bonrow/static/js/2.3fe48474.chunk.js.LICENSE.txt",
     "static/media/Decibel_2.29d951ad.ttf": "/bonrow/static/media/Decibel_2.29d951ad.ttf",
     "static/media/Light-In-Brush.4f01071e.ttf": "/bonrow/static/media/Light-In-Brush.4f01071e.ttf",
     "static/media/Our-Daydream.886eeba8.ttf": "/bonrow/static/media/Our-Daydream.886eeba8.ttf",
@@ -39,7 +39,7 @@
   "entrypoints": [
     "static/js/runtime-main.412ca448.js",
     "static/css/2.07e5eb8b.chunk.css",
-    "static/js/2.1eb9ba35.chunk.js",
-    "static/js/main.ae68d2a9.chunk.js"
+    "static/js/2.3fe48474.chunk.js",
+    "static/js/main.ffa3d6fe.chunk.js"
   ]
 }
